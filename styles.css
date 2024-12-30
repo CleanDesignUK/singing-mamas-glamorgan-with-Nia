@@ -87,7 +87,7 @@ body {
 /* Button Styles */
 .btn-primary {
     background-color: #FFA500; /* Orange */
-    border-color: #FFA500;
+    border:3px solid #fdfdfc;
     border-radius: 0;
     padding: 12px 25px;
     font-size: 1rem;
