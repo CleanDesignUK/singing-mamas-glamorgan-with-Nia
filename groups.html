@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Groups - Singing Mamas</title>
+    <meta name="description" content="Discover Singing Mamas groups in Glamorgan, Bridgend, Port Talbot, and surrounding areas. Join a supportive women's singing circle to enhance your well-being and socialize with other mothers.">
+    <meta name="keywords" content="Singing Mamas groups, women's singing circle UK, group singing schedule, socializing mothers, mental health support, benefits for kids, Glamorgan, Bridgend, Port Talbot">
+    <meta name="author" content="Clean Design UK">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- SweetAlert CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Page-Specific Styles -->
+    <style>
+        /* Hero Section Styles */
+        .hero {
+            background-image: url('https://via.placeholder.com/1200x600?text=Singing+Mamas+Groups');
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            margin-bottom: 30px;
+        }
+
+        /* Group Card Specific Styles */
+        .group-card {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .group-card img {
+            transition: transform 0.3s ease;
+        }
+
+        .group-card:hover img {
+            transform: scale(1.05);
+        }
+
+        .group-card .card-body {
+            background-color: rgba(255, 248, 225, 0.95);
+            transition: background-color 0.3s ease;
+        }
+
+        .group-card:hover .card-body {
+            background-color: rgba(255, 248, 225, 1);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <!-- Logo Placeholder -->
+                <img src="images/logo-nia.jpg" alt="Singing Mamas Logo" style="height:80px;width:80px; border-radius: 50%;" >
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="groups.html">Groups</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-content">
+            <h1>Join Our Singing Groups</h1>
+            <p class="lead">Connect, Sing, and Thrive with Singing Mamas</p>
+            <a href="contact.html" class="btn btn-primary mt-3">Join a Group</a>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container my-5">
+        <!-- Groups Overview -->
+        <div class="row mb-5">
+            <div class="col-12 text-center">
+                <h1 class="section-title">Our Groups</h1>
+                <p>Singing Mamas offers a variety of groups tailored to fit your schedule and lifestyle. Whether you're a working mother or looking for afternoon sessions, we have a group that's perfect for you.</p>
+            </div>
+        </div>
+
+        <!-- Groups Listings -->
+        <div class="row">
+            <!-- Group 1 -->
+            <div class="col-md-6 mb-4">
+                <div class="card group-card">
+                    <img src="https://via.placeholder.com/500x300?text=Bridgend+Group" class="card-img-top" alt="Bridgend Group">
+                    <div class="card-body">
+                        <h5 class="card-title">Tuesdays 1:00 PM - 2:30 PM</h5>
+                        <p class="card-text"><strong>Location:</strong> Bridgend Deaf and Social Club, CF31 2AP</p>
+                        <p class="card-text">Ideal for mothers seeking afternoon sessions. Enjoy singing in a relaxed environment while connecting with other mothers.</p>
+                        <a href="contact.html" class="btn btn-primary">Book a Taster</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Group 2 -->
+            <div class="col-md-6 mb-4">
+                <div class="card group-card">
+                    <img src="https://via.placeholder.com/500x300?text=Laleston+Group" class="card-img-top" alt="Laleston Group">
+                    <div class="card-body">
+                        <h5 class="card-title">Tuesdays 6:00 PM - 7:30 PM</h5>
+                        <p class="card-text"><strong>Location:</strong> St David's Church Hall, Laleston, CF32 0LB</p>
+                        <p class="card-text">Evening sessions perfect for working mothers. Unwind after a long day with uplifting songs and meaningful connections.</p>
+                        <a href="contact.html" class="btn btn-primary">Book a Taster</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Group 3 -->
+            <div class="col-md-6 mb-4">
+                <div class="card group-card">
+                    <img src="https://via.placeholder.com/500x300?text=Port+Talbot+Group" class="card-img-top" alt="Port Talbot Group">
+                    <div class="card-body">
+                        <h5 class="card-title">Wednesdays 9:30 AM - 11:00 AM</h5>
+                        <p class="card-text"><strong>Location:</strong> Ebenezer Church Hall, Port Talbot, SA13 1NY</p>
+                        <p class="card-text">Morning sessions with a focus on mental well-being. Start your day with positive energy and harmonious melodies.</p>
+                        <a href="contact.html" class="btn btn-primary">Book a Taster</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Group 4 -->
+            <div class="col-md-6 mb-4">
+                <div class="card group-card">
+                    <img src="https://via.placeholder.com/500x300?text=Taibach+Group" class="card-img-top" alt="Taibach Group">
+                    <div class="card-body">
+                        <h5 class="card-title">Fridays 1:00 PM - 2:30 PM</h5>
+                        <p class="card-text"><strong>Location:</strong> Wesley Church Hall, Taibach, SA13 1TT</p>
+                        <p class="card-text">Afternoon sessions with refreshments and social time. Enjoy a blend of singing, snacks, and camaraderie.</p>
+                        <a href="contact.html" class="btn btn-primary">Book a Taster</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Benefits of Joining -->
+        <div class="row my-5">
+            <div class="col-12">
+                <h2 class="section-title text-center">Benefits of Joining</h2>
+                <p>Participating in Singing Mamas groups offers numerous benefits:</p>
+                <ul class="list-group list-group-flush benefits-list">
+                    <li class="list-group-item"><strong>Improved Mood:</strong> Singing releases endorphins, enhancing your overall mood.</li>
+                    <li class="list-group-item"><strong>Reduced Stress:</strong> Group singing acts as a natural stress reliever.</li>
+                    <li class="list-group-item"><strong>Social Connection:</strong> Build lasting friendships and a supportive community.</li>
+                    <li class="list-group-item"><strong>Enhanced Well-Being:</strong> Regular participation promotes mental and emotional health.</li>
+                    <li class="list-group-item"><strong>Positive Environment for Kids:</strong> Creates a nurturing space for your children to thrive.</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer mt-auto">
+        <div class="container text-center">
+            <p>© 2035 by Clean Design UK</p>
+            <div class="social-icons my-2">
+                <a href="https://facebook.com" target="_blank"><i class="bi bi-facebook"></i></a>
+                <a href="https://instagram.com" target="_blank"><i class="bi bi-instagram"></i></a>
+                <!-- Add more social links as needed -->
+            </div>
+            <div class="policy-links">
+                <a href="privacy-policy.html">Privacy Policy</a> | 
+                <a href="cookie-policy.html">Cookie Policy</a>
+            </div>
+            <div class="contact-email">
+                <p>Contact us at: <a href="mailto:niasingingmamas@hotmail.com">niasingingmamas@hotmail.com</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- SweetAlert JS -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        // Additional JS can be added here if needed
+    </script>
+</body>
+</html>

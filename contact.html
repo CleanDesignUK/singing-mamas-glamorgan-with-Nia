@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Singing Mamas</title>
+    <meta name="description" content="Get in touch with Singing Mamas in Glamorgan, Bridgend, Port Talbot, and surrounding areas. Fill out our contact form to send us a message or find our email and phone information.">
+    <meta name="keywords" content="Contact Singing Mamas, Singing Mamas email, Singing Mamas phone, women's singing circle contact, mental health support, socializing mothers, benefits for kids, Glamorgan, Bridgend, Port Talbot">
+    <meta name="author" content="Clean Design UK">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- SweetAlert CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Page-Specific Styles -->
+    <style>
+        /* Contact Form Styles */
+        .contact-form {
+            background-color: #ffffff;
+            padding: 30px;
+            border: 1px solid #FFA500; /* Orange Border */
+            border-radius: 0; /* Sharp Corners */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease;
+        }
+
+        .contact-form:hover {
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .contact-form h1 {
+            color: #343a40;
+            margin-bottom: 20px;
+            font-size: 2.5rem;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        /* Input Styles */
+        .contact-form .form-control {
+            border-radius: 0; /* Sharp Corners */
+            border-color: #FFA500; /* Orange Border */
+            transition: border-color 0.3s ease;
+        }
+
+        .contact-form .form-control:focus {
+            border-color: #e59400; /* Darker Orange */
+            box-shadow: none;
+        }
+
+        /* Submit Button */
+        .contact-form .btn-primary {
+            border-radius: 0; /* Sharp Corners */
+            padding: 12px 20px;
+            font-size: 1.1rem;
+        }
+
+        /* Contact Information Styles */
+        .contact-info {
+            background-color: #ffffff;
+            padding: 30px;
+            border: 1px solid #FFA500; /* Orange Border */
+            border-radius: 0; /* Sharp Corners */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease;
+        }
+
+        .contact-info:hover {
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .contact-info h3 {
+            color: #FFA500; /* Orange */
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .contact-info p {
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+        }
+
+        .contact-info a {
+            color: #FFA500; /* Orange */
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .contact-info a:hover {
+            color: #343a40;
+        }
+
+        /* Image Styles */
+        .contact-image {
+            width: 100%;
+            height: auto;
+            border: 1px solid #FFA500; /* Orange Border */
+            border-radius: 0; /* Sharp Corners */
+            transition: transform 0.3s;
+        }
+
+        .contact-image:hover {
+            transform: scale(1.05);
+        }
+
+        /* FAQ Styles */
+        .faq-section {
+            margin-top: 40px;
+        }
+
+        .faq-item {
+            margin-bottom: 20px;
+        }
+
+        .faq-question {
+            font-weight: 600;
+            color: #FFA500;
+        }
+
+        .faq-answer {
+            margin-top: 5px;
+            color: #343a40;
+        }
+
+        /* Map Styles */
+        .map-responsive {
+            overflow: hidden;
+            padding-bottom: 56.25%;
+            position: relative;
+            height: 0;
+        }
+
+        .map-responsive iframe {
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <!-- Logo Placeholder -->
+                <img src="images/logo-nia.jpg" alt="Singing Mamas Logo" style="height:80px;width:80px; border-radius: 50%;" >
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="groups.html">Groups</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Form Section -->
+    <main class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8 mb-4">
+                <div class="contact-form">
+                    <h1>Contact Us</h1>
+                    <!--
+                    =======================================================================
+                    This is a working contact form. To receive email,
+                    Replace YOUR_ACCESS_KEY_HERE with your actual Access Key.
+                    Create Access Key here 👉 https://web3forms.com/
+                    =======================================================================
+                    -->
+                    <form action="https://api.web3forms.com/submit" method="POST" id="form" class="needs-validation" novalidate>
+                        <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE" />
+                        <input type="hidden" name="subject" value="New Submission from Web3Forms" />
+                        <input type="checkbox" name="botcheck" id="" style="display: none;" />
+                        <div class="row mb-4">
+                            <div class="col-md-6 my-1">
+                                <label for="fname" class="form-label">First Name</label>
+                                <input type="text" name="name" id="first_name" placeholder="John" required class="form-control" />
+                                <div class="invalid-feedback">
+                                    Please provide your first name.
+                                </div>
+                            </div>
+                            <div class="col-md-6 my-1">
+                                <label for="lname" class="form-label">Last Name</label>
+                                <input type="text" name="last_name" id="lname" placeholder="Doe" required class="form-control" />
+                                <div class="invalid-feedback">
+                                    Please provide your last name.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-4">
+                            <div class="col-md-6 my-1">
+                                <label for="email" class="form-label">Email Address</label>
+                                <input type="email" name="email" id="email" placeholder="you@company.com" required class="form-control" />
+                                <div class="invalid-feedback">
+                                    Please provide a valid email address.
+                                </div>
+                            </div>
+                            <div class="col-md-6 my-1">
+                                <label for="phone" class="form-label">Phone Number</label>
+                                <input type="text" name="phone" id="phone" placeholder="+44 (0) 1234 567890" required class="form-control" />
+                                <div class="invalid-feedback">
+                                    Please provide your phone number.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <label for="message" class="form-label">Your Message</label>
+                            <textarea rows="5" name="message" id="message" placeholder="Your Message" class="form-control" required></textarea>
+                            <div class="invalid-feedback">
+                                Please enter your message.
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <button type="submit" class="btn btn-primary w-100 py-2">Send Message</button>
+                        </div>
+                        <p class="text-center text-gray-400" id="result"></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Information Section -->
+        <div class="row mt-5">
+            <div class="col-md-6 mb-4">
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <p><strong>Email:</strong> <a href="mailto:niasingingmamas@hotmail.com">niasingingmamas@hotmail.com</a></p>
+                    <p><strong>WhatsApp:</strong> <a href="https://wa.me/447974066689" target="_blank">07974 066689</a></p>
+                    <p><strong>Office Hours:</strong> Monday - Friday, 9:00 AM - 6:00 PM</p>
+                    <p><strong>Address:</strong> 123 Singing Street, Margam, South Wales, CF31 2AP</p>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <!-- Google Map Integration -->
+                <div class="map-responsive">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!..." width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQ Section -->
+        <div class="row faq-section">
+            <div class="col-12">
+                <h2 class="section-title text-center">Frequently Asked Questions</h2>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="faq-item">
+                    <p class="faq-question">What is Singing Mamas?</p>
+                    <p class="faq-answer">Singing Mamas is a community-focused organization that uses group singing as a tool to enhance the mental and emotional well-being of mothers and their children.</p>
+                </div>
+                <div class="faq-item">
+                    <p class="faq-question">Do I need any musical experience to join?</p>
+                    <p class="faq-answer">No prior musical experience is required. Our sessions are designed to be inclusive and welcoming to everyone.</p>
+                </div>
+                <div class="faq-item">
+                    <p class="faq-question">How can I join a group?</p>
+                    <p class="faq-answer">You can join a group by signing up through our contact form below or by attending one of our taster sessions.</p>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="faq-item">
+                    <p class="faq-question">Are the sessions free?</p>
+                    <p class="faq-answer">Some sessions are free, while others may have a nominal fee to cover venue and material costs. Please contact us for more details.</p>
+                </div>
+                <div class="faq-item">
+                    <p class="faq-question">What are the benefits of joining Singing Mamas?</p>
+                    <p class="faq-answer">Joining Singing Mamas offers numerous benefits including improved mental health, reduced stress, social connections, and a positive environment for your children.</p>
+                </div>
+                <div class="faq-item">
+                    <p class="faq-question">Can I bring my child to the sessions?</p>
+                    <p class="faq-answer">Yes, our parent-child sessions are specifically designed to include your children, fostering a nurturing and engaging environment for both of you.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer mt-auto">
+        <div class="container text-center">
+            <p>© 2035 by Clean Design UK</p>
+            <div class="social-icons my-2">
+                <a href="https://facebook.com" target="_blank"><i class="bi bi-facebook"></i></a>
+                <a href="https://instagram.com" target="_blank"><i class="bi bi-instagram"></i></a>
+                <!-- Add more social links as needed -->
+            </div>
+            <div class="policy-links">
+                <a href="privacy-policy.html">Privacy Policy</a> | 
+                <a href="cookie-policy.html">Cookie Policy</a>
+            </div>
+            <div class="contact-email">
+                <p>Contact us at: <a href="mailto:niasingingmamas@hotmail.com">niasingingmamas@hotmail.com</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- SweetAlert JS -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        // SweetAlert for Contact Form Submission
+        (function () {
+            'use strict'
+
+            // Fetch the form we want to apply custom Bootstrap validation styles to
+            var form = document.getElementById('form')
+
+            // Add a submit event listener
+            form.addEventListener('submit', function (event) {
+                event.preventDefault()
+                event.stopPropagation()
+
+                if (form.checkValidity()) {
+                    // If the form is valid, submit it via Fetch API
+                    var formData = new FormData(form)
+                    fetch(form.action, {
+                        method: form.method,
+                        body: formData,
+                        headers: {
+                            'Accept': 'application/json'
+                        }
+                    }).then(response => {
+                        if (response.ok) {
+                            Swal.fire({
+                                title: 'Success!',
+                                text: 'Your message has been sent successfully.',
+                                icon: 'success',
+                                confirmButtonText: 'Close'
+                            })
+                            form.reset()
+                            form.classList.remove('was-validated')
+                        } else {
+                            response.json().then(data => {
+                                Swal.fire({
+                                    title: 'Error!',
+                                    text: data.error || 'Something went wrong. Please try again later.',
+                                    icon: 'error',
+                                    confirmButtonText: 'Close'
+                                })
+                            })
+                        }
+                    }).catch(error => {
+                        Swal.fire({
+                            title: 'Error!',
+                            text: 'Something went wrong. Please try again later.',
+                            icon: 'error',
+                            confirmButtonText: 'Close'
+                        })
+                    })
+                } else {
+                    form.classList.add('was-validated')
+                }
+            }, false)
+        })()
+    </script>
+</body>
+</html>

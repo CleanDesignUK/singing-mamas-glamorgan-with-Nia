@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Singing Mamas</title>
+    <meta name="description" content="Learn more about Singing Mamas, our mission to support women's mental health through group singing in Glamorgan, Bridgend, Port Talbot, and surrounding areas.">
+    <meta name="keywords" content="About Singing Mamas, women's mental health, group singing, well-being, socializing mothers, benefits for kids, Glamorgan, Bridgend, Port Talbot">
+    <meta name="author" content="Clean Design UK">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- SweetAlert CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Page-Specific Styles -->
+    <style>
+        /* Founder Image Styles */
+        .founder-img {
+            width: 100%;
+            height: auto;
+            border: 1px solid #FFA500; /* Orange Border */
+            border-radius: 0; /* Sharp Corners */
+            transition: transform 0.3s;
+        }
+
+        .founder-img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Section Headers */
+        .section-header {
+            color: #FFA500; /* Orange */
+            margin-bottom: 20px;
+            border-bottom: 2px solid #FFA500;
+            display: inline-block;
+            padding-bottom: 5px;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        /* Founder Bio Styles */
+        .founder-bio {
+            background-color: #FFF8E1;
+            padding: 20px;
+            border-radius: 0;
+            border-left: 5px solid #FFA500;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+
+        .founder-bio p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        /* Programs Section */
+        .programs {
+            margin-top: 40px;
+        }
+
+        .program-card {
+            border: 1px solid #FFA500;
+            border-radius: 0;
+            transition: transform 0.3s, box-shadow 0.3s;
+            background-color: #FFF8E1;
+            margin-bottom: 20px;
+        }
+
+        .program-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        .program-card img {
+            height: 200px;
+            object-fit: cover;
+            width: 100%;
+        }
+
+        .program-card-body {
+            padding: 15px;
+        }
+
+        .program-card-title {
+            color: #343a40;
+            margin-bottom: 10px;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .program-card-text {
+            color: #343a40;
+        }
+
+        /* Additional Testimonials */
+        .additional-testimonials {
+            margin-top: 40px;
+        }
+
+        .testimonial {
+            background-color: #ffffff;
+            padding: 30px;
+            border-left: 5px solid #FFA500;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .testimonial p {
+            font-size: 1.1rem;
+            font-style: italic;
+            color: #343a40;
+        }
+
+        .testimonial h5 {
+            margin-top: 15px;
+            font-family: 'Montserrat', sans-serif;
+            color: #FFA500;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <!-- Logo Placeholder -->
+                <img src="images/logo-nia.jpg" alt="Singing Mamas Logo" style="height:80px;width:80px; border-radius: 50%;" >
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="groups.html">Groups</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container my-5">
+        <!-- Introduction -->
+        <div class="row mb-5">
+            <div class="col-12">
+                <h1 class="text-center section-title">About Singing Mamas</h1>
+                <p class="text-center">Singing Mamas is a UK-based non-profit organization dedicated to enhancing women's well-being through group singing. Founded by Nia Prosser, we offer various programs and services to support women, particularly mothers and pregnant women, in Glamorgan, Bridgend, Port Talbot, and surrounding areas.</p>
+            </div>
+        </div>
+
+        <!-- Leader’s Story -->
+        <div class="row mb-5">
+            <div class="col-md-6">
+                <img src="https://via.placeholder.com/500x300?text=Leader+Nia+Prosser" alt="Nia Prosser" class="founder-img">
+            </div>
+            <div class="col-md-6">
+                <h2 class="section-header">Our Leader - Nia Prosser</h2>
+                <div class="founder-bio">
+                    <p>Hello everyone. I'm Nia Prosser, a mother of four beautiful children, two energetic dogs, and a loving wife. Living in Margam, South Wales, I have always embraced the rich Welsh tradition of singing. From my early days in school to my professional career, singing has been an integral part of my life.</p>
+                    <p>With a background as a primary school teacher for 14 years, a childminder, a forest school leader, and currently a Monkey Music teacher, I have dedicated my life to education and fostering creativity in children. My passion for music therapy led me to lead Singing Mamas, aiming to share the profound benefits of singing with other mothers.</p>
+                    <p>Despite battling depression, singing has been my anchor, keeping me resilient and positive. Research consistently shows that singing enhances physical, mental, and emotional well-being, making it an ideal activity for mothers seeking support and connection.</p>
+                    <p>At Singing Mamas, we believe that every voice is valid and welcome. Our mission is to create a supportive community where mothers can socialize, improve their mental health, and enjoy the shared joy of singing with their children.</p>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- Mission & Vision -->
+        <div class="row mb-5">
+            <div class="col-12">
+                <h2 class="section-header text-center">Our Mission & Vision</h2>
+                <p>Singing Mamas is committed to enhancing women's mental health and well-being through the power of group singing. We provide a safe, non-judgmental space for mothers to connect, share experiences, and support each other. By fostering a sense of community and promoting social interaction, we aim to improve the overall quality of life for mothers and their children.</p>
+                <p>Our mission is to empower women through music, offering an accessible and enjoyable way to boost mental health, reduce stress, and build lasting friendships. Our vision is to expand our reach, creating more Singing Mamas groups across the UK and internationally, ensuring that every woman has the opportunity to experience the benefits of group singing.</p>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- Our Programs -->
+        <div class="row mb-5">
+            <div class="col-12">
+                <h2 class="section-title text-center">Our Programs</h2>
+            </div>
+            <!-- Program 1 -->
+            <div class="col-md-4">
+                <div class="card program-card">
+                    <img src="https://via.placeholder.com/500x300?text=Group+Singing+Sessions" class="card-img-top" alt="Group Singing Sessions">
+                    <div class="card-body program-card-body">
+                        <h5 class="program-card-title">Group Singing Sessions</h5>
+                        <p class="program-card-text">Join our regular group singing sessions designed to enhance your mental well-being and foster a sense of community among mothers. Suitable for all skill levels.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Program 2 -->
+            <div class="col-md-4">
+                <div class="card program-card">
+                    <img src="https://via.placeholder.com/500x300?text=Music+Therapy+Workshops" class="card-img-top" alt="Music Therapy Workshops">
+                    <div class="card-body program-card-body">
+                        <h5 class="program-card-title">Music Therapy Workshops</h5>
+                        <p class="program-card-text">Our workshops focus on using music as a therapeutic tool to improve emotional and mental health. Led by certified music therapists.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Program 3 -->
+            <div class="col-md-4">
+                <div class="card program-card">
+                    <img src="https://via.placeholder.com/500x300?text=Parent-Child+Sessions" class="card-img-top" alt="Parent-Child Sessions">
+                    <div class="card-body program-card-body">
+                        <h5 class="program-card-title">Parent-Child Sessions</h5>
+                        <p class="program-card-text">Engage in singing activities with your children, fostering stronger bonds and providing a positive environment for their emotional development.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- Impact Section -->
+        <div class="row mb-5">
+            <div class="col-12">
+                <h2 class="section-title text-center">Our Impact</h2>
+                <p>Since our inception, Singing Mamas has positively impacted the lives of numerous women and their families. Participants have reported significant improvements in mood, reduced stress levels, and a strengthened sense of community.</p>
+                <p>By integrating singing into daily routines, mothers have found a therapeutic outlet that not only enhances their own well-being but also creates a nurturing environment for their children. Our partnerships with health services and collaborations with the NHS have enabled us to reach women most in need, providing free access to our services and incorporating singing as a form of support in healthcare settings.</p>
+                <p>Our training programs have empowered many women to become leaders in their communities, further expanding the reach and impact of Singing Mamas.</p>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- Additional Testimonials -->
+        <div class="row additional-testimonials">
+            <div class="col-12">
+                <h2 class="section-title text-center">What Our Members Say</h2>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="testimonial">
+                    <p>"Joining Singing Mamas has been a transformative experience. Not only have I found a supportive community, but my mental well-being has significantly improved."</p>
+                    <h5>- Sarah T.</h5>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="testimonial">
+                    <p>"The sessions are uplifting and provide a perfect balance of fun and relaxation. My kids love it too!"</p>
+                    <h5>- Emily R.</h5>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="testimonial">
+                    <p>"Singing together has not only strengthened my voice but also my confidence. The community here is amazing."</p>
+                    <h5>- Laura M.</h5>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="testimonial">
+                    <p>"It's wonderful to connect with other mothers through music. Singing Mamas has become a highlight of my week."</p>
+                    <h5>- Karen S.</h5>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer mt-auto">
+        <div class="container text-center">
+            <p>© 2035 by Clean Design UK</p>
+            <div class="social-icons my-2">
+                <a href="https://facebook.com" target="_blank"><i class="bi bi-facebook"></i></a>
+                <a href="https://instagram.com" target="_blank"><i class="bi bi-instagram"></i></a>
+                <!-- Add more social links as needed -->
+            </div>
+            <div class="policy-links">
+                <a href="privacy-policy.html">Privacy Policy</a> | 
+                <a href="cookie-policy.html">Cookie Policy</a>
+            </div>
+            <div class="contact-email">
+                <p>Contact us at: <a href="mailto:niasingingmamas@hotmail.com">niasingingmamas@hotmail.com</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- SweetAlert JS -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        // Additional JS can be added here if needed
+    </script>
+</body>
+</html>
