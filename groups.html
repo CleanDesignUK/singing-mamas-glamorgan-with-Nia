@@ -71,6 +71,33 @@
         .group-card:hover .card-body {
             background-color: rgba(255, 248, 225, 1);
         }
+
+
+        /* Unique Styles for Group 5 */
+#group-5 {
+    border: 2px solid #FFA500; /* Orange border to match brand */
+    box-shadow: 0 4px 8px rgba(52, 58, 64, 0.2); /* Dark grey shadow for depth */
+}
+
+#group-5 .card-body {
+    background-color: #FFF8E1; /* Pastel Orange to match overall card background */
+}
+
+#group-5 .card-body:hover {
+    background-color: #FFE0B2; /* Slightly darker pastel for hover effect */
+}
+
+#group-5 .btn-primary {
+    background-color: #FFA500; /* Orange button to match brand */
+    border-color: #FFA500;
+    transition: background-color 0.3s, border-color 0.3s, transform 0.2s;
+}
+
+#group-5 .btn-primary:hover {
+    background-color: #e59400; /* Darker Orange on hover */
+    border-color: #e59400;
+    transform: scale(1.05);
+}
     </style>
 </head>
 <body>
@@ -124,7 +151,7 @@
         </div>
 
         <!-- Groups Listings -->
-        <div class="row">
+        <div class="row d-flex justify-content-center align-items-center">
             <!-- Group 1 -->
             <div class="col-md-6 mb-4">
                 <div class="card group-card">
@@ -169,6 +196,19 @@
                         <h5 class="card-title">Fridays 1:00 PM - 2:30 PM</h5>
                         <p class="card-text"><strong>Location:</strong> Wesley Church Hall, Taibach, SA13 1TT</p>
                         <p class="card-text">Afternoon sessions with refreshments and social time. Enjoy a blend of singing, snacks, and camaraderie.</p>
+                        <a href="contact.html" class="btn btn-primary">Book a Taster</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="card group-card" id="group-5">
+                    <img src="the-yurt-group.jpg" class="card-img-top" alt="The Yurt Group" style="object-position: 50% 30%; object-fit: cover;">
+
+
+                    <div class="card-body">
+                        <h5 class="card-title"> NEW GROUP Mondays 6:00 PM - 7:30 PM</h5>
+                        <p class="card-text"><strong>Location:</strong> The Yurt, Ty'n Cellar Farm, Margam</p>
+                        <p class="card-text">Join our unique evening sessions in a tranquil yurt setting. Experience a blend of soothing melodies and serene connections.</p>
                         <a href="contact.html" class="btn btn-primary">Book a Taster</a>
                     </div>
                 </div>
