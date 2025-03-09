@@ -20,84 +20,70 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
-        <!-- Page-Specific Styles -->
-        <style>
-               h1, h2, h3,h4,h5,h6 a {
+    <!-- Page-Specific Styles -->
+    <style>
+        h1, h2, h3, h4, h5, h6 a {
             font-family: 'Spectral', Georgia, 'Times New Roman', Times, serif !important;
         }
         /* Hero Section Styles */
         .hero {
-    background-image: url("group-hero.jpg") !important;
-    background-size: cover;
-    background-position: center top;
-    height: 80vh;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-
+            background-image: url("group-hero.jpg") !important;
+            background-size: cover;
+            background-position: center top;
+            height: 80vh;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
         .hero h1 {
             font-size: 3rem;
             font-weight: 600;
             margin-bottom: 20px;
         }
-
         .hero p {
             font-size: 1.25rem;
             margin-bottom: 30px;
         }
-
         /* Group Card Specific Styles */
         .group-card {
             position: relative;
             overflow: hidden;
         }
-
         .group-card img {
             transition: transform 0.3s ease;
         }
-
         .group-card:hover img {
             transform: scale(1.05);
         }
-
         .group-card .card-body {
             background-color: #FFA500;
             transition: background-color 0.3s ease;
         }
-
         .group-card:hover .card-body {
             background-color: rgba(255, 248, 225, 1);
         }
-
-
-        /* Unique Styles for Group 5 */
-#group-5 {
-    border: 2px solid #FFA500; /* Orange border to match brand */
-    box-shadow: 0 4px 8px rgba(52, 58, 64, 0.2); /* Dark grey shadow for depth */
-}
-
-#group-5 .card-body {
-    background-color: #FFF8E1; /* Pastel Orange to match overall card background */
-}
-
-#group-5 .card-body:hover {
-    background-color: #FFE0B2; /* Slightly darker pastel for hover effect */
-}
-
-#group-5 .btn-primary {
-    background-color: #FFA500; /* Orange button to match brand */
-    border-color: #FFA500;
-    transition: background-color 0.3s, border-color 0.3s, transform 0.2s;
-}
-
-#group-5 .btn-primary:hover {
-    background-color: #e59400; /* Darker Orange on hover */
-    border-color: #e59400;
-    transform: scale(1.05);
-}
+        /* Example: Unique Styles for one special group (optional) */
+        /* #group-5 {
+            border: 2px solid #FFA500; 
+            box-shadow: 0 4px 8px rgba(52, 58, 64, 0.2);
+        }
+        #group-5 .card-body {
+            background-color: #FFF8E1; 
+        }
+        #group-5 .card-body:hover {
+            background-color: #FFE0B2; 
+        }
+        #group-5 .btn-primary {
+            background-color: #FFA500; 
+            border-color: #FFA500;
+            transition: background-color 0.3s, border-color 0.3s, transform 0.2s;
+        }
+        #group-5 .btn-primary:hover {
+            background-color: #e59400; 
+            border-color: #e59400;
+            transform: scale(1.05);
+        } */
     </style>
 </head>
 <body>
@@ -105,12 +91,11 @@
     <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
         <div class="container">
             <a class="navbar-brand" href="index.html">
-                <!-- Logo Placeholder -->
-                <img src="images/logo-nia.jpg" alt="Singing Mamas Logo" style="height:80px;width:80px; border-radius: 50%; " >  Glamorgan
-            </a> 
-            <button class="navbar-toggler  text-white"  style="background-color:rgb(207, 180, 129) !important;"type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                <img src="images/logo-nia.jpg" alt="Singing Mamas Logo" style="height:80px;width:80px; border-radius: 50%;"> Glamorgan
+            </a>
+            <button class="navbar-toggler text-white" style="background-color:rgb(207, 180, 129) !important;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon " ></span>
+                <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
@@ -146,69 +131,82 @@
         <div class="row mb-5">
             <div class="col-12 text-center">
                 <h1 class="section-title">Our Groups</h1>
-                <p>Singing Mamas offers a variety of groups tailored to fit your schedule and lifestyle. Whether you're a working mother or looking for afternoon sessions, we have a group that's perfect for you.</p>
+                <p>Singing Mamas offers a variety of groups tailored to fit your schedule and lifestyle. Whether you're looking for a midday boost, an evening wind-down, or a warm afternoon gathering, we have a group that’s perfect for you.</p>
             </div>
         </div>
 
         <!-- Groups Listings -->
         <div class="row d-flex justify-content-center align-items-center">
-            <!-- Group 1 -->
+            <!-- Group 1: The Old School, Sully -->
             <div class="col-md-6 mb-4">
                 <div class="card group-card">
-                    <img src="bridge-end-group.jpg" class="card-img-top" alt="Bridgend Group">
+                    <img src="the-old-school.jpg" class="card-img-top" alt="The Old School, Sully" style="object-fit: cover;">
                     <div class="card-body">
-                        <h5 class="card-title">Tuesdays 1:00 PM - 2:30 PM</h5>
-                        <p class="card-text"><strong>Location:</strong> Bridgend Deaf and Social Club, CF31 2AP</p>
-                        <p class="card-text">Ideal for mothers seeking afternoon sessions. Enjoy singing in a relaxed environment while connecting with other mothers.</p>
+                        <h5 class="card-title">Mondays 1:00 PM - 2:30 PM</h5>
+                        <p class="card-text"><strong>Location:</strong> The Old School, Sully</p>
+                        <p class="card-text">
+                            Kick off your week with a bright Monday afternoon singing session. Embrace an uplifting environment in a charming historic building, perfect for connecting with fellow mums.
+                        </p>
                         <a href="contact.html" class="btn btn-primary">Book a Taster</a>
                     </div>
                 </div>
             </div>
-            <!-- Group 2 -->
+
+            <!-- Group 2: Ty'n Cellar Farm, Margam -->
             <div class="col-md-6 mb-4">
                 <div class="card group-card">
-                    <img src="david-group.jpg" class="card-img-top" alt="Laleston Group">
+                    <img src="tyn-cellar-farm.jpg" class="card-img-top" alt="Ty'n Cellar Farm, Margam" style="object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title">Mondays 6:00 PM - 7:30 PM</h5>
+                        <p class="card-text"><strong>Location:</strong> Ty'n Cellar Farm, Margam</p>
+                        <p class="card-text">
+                            Join our tranquil Monday evening gathering at Ty'n Cellar Farm. It’s a perfect wind-down after a busy day, filled with peaceful harmonies and supportive camaraderie.
+                        </p>
+                        <a href="contact.html" class="btn btn-primary">Book a Taster</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Group 3: Laleston Church Hall -->
+            <div class="col-md-6 mb-4">
+                <div class="card group-card">
+                    <img src="st-david-laleston.jpg" class="card-img-top" alt="Laleston Church Hall" style="object-fit: cover;">
                     <div class="card-body">
                         <h5 class="card-title">Tuesdays 6:00 PM - 7:30 PM</h5>
-                        <p class="card-text"><strong>Location:</strong> St David's Church Hall, Laleston, CF32 0LB</p>
-                        <p class="card-text">Evening sessions perfect for working mothers. Unwind after a long day with uplifting songs and meaningful connections.</p>
+                        <p class="card-text"><strong>Location:</strong> Laleston Church Hall</p>
+                        <p class="card-text">
+                            Recharge on Tuesday evenings in Laleston Church Hall. This friendly session is perfect for those who love to sing after work and form lasting friendships through music.
+                        </p>
                         <a href="contact.html" class="btn btn-primary">Book a Taster</a>
                     </div>
                 </div>
             </div>
-            <!-- Group 3 -->
+
+            <!-- Group 4: Yurt in the City, Cardiff -->
             <div class="col-md-6 mb-4">
                 <div class="card group-card">
-                    <img src="port-talbot-group.jpg" class="card-img-top" alt="Port Talbot Group">
+                    <img src="yurt-in-the-city.jpg" class="card-img-top" alt="Yurt in the City, Cardiff" style="object-fit: cover;">
                     <div class="card-body">
                         <h5 class="card-title">Wednesdays 9:30 AM - 11:00 AM</h5>
-                        <p class="card-text"><strong>Location:</strong> Ebenezer Church Hall, Port Talbot, SA13 1NY</p>
-                        <p class="card-text">Morning sessions with a focus on mental well-being. Start your day with positive energy and harmonious melodies.</p>
+                        <p class="card-text"><strong>Location:</strong> Yurt in the City, Cardiff</p>
+                        <p class="card-text">
+                            Start your midweek morning in a unique yurt setting. Experience the comforting warmth of group singing in the heart of Cardiff, perfect for boosting midweek energy.
+                        </p>
                         <a href="contact.html" class="btn btn-primary">Book a Taster</a>
                     </div>
                 </div>
             </div>
-            <!-- Group 4 -->
+
+            <!-- Group 5: Beacon Church Hall, Cowbridge -->
             <div class="col-md-6 mb-4">
                 <div class="card group-card">
-                    <img src="taebach-group.jpg" class="card-img-top" alt="Taibach Group">
+                    <img src="beacon-church.jpg" class="card-img-top" alt="Beacon Church Hall, Cowbridge" style="object-fit: cover;">
                     <div class="card-body">
-                        <h5 class="card-title">Fridays 1:00 PM - 2:30 PM</h5>
-                        <p class="card-text"><strong>Location:</strong> Wesley Church Hall, Taibach, SA13 1TT</p>
-                        <p class="card-text">Afternoon sessions with refreshments and social time. Enjoy a blend of singing, snacks, and camaraderie.</p>
-                        <a href="contact.html" class="btn btn-primary">Book a Taster</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 mb-4">
-                <div class="card group-card" id="group-5">
-                    <img src="the-yurt-group.jpg" class="card-img-top" alt="The Yurt Group" style="object-position: 50% 30%; object-fit: cover;">
-
-
-                    <div class="card-body">
-                        <h5 class="card-title"> NEW GROUP Mondays 6:00 PM - 7:30 PM</h5>
-                        <p class="card-text"><strong>Location:</strong> The Yurt, Ty'n Cellar Farm, Margam</p>
-                        <p class="card-text">Join our unique evening sessions in a tranquil yurt setting. Experience a blend of soothing melodies and serene connections.</p>
+                        <h5 class="card-title">Thursdays 1:00 PM - 2:30 PM</h5>
+                        <p class="card-text"><strong>Location:</strong> Beacon Church Hall, Cowbridge</p>
+                        <p class="card-text">
+                            Gather for a warm Thursday afternoon in Cowbridge. Share uplifting tunes and laughter, and head into the weekend with a refreshed spirit and new friendships.
+                        </p>
                         <a href="contact.html" class="btn btn-primary">Book a Taster</a>
                     </div>
                 </div>
@@ -237,7 +235,6 @@
             <p>© 2024 by <a href="https://cleandesignuk.com/">Clean Design UK </a></p>
             <div class="social-icons my-2">
                 <a href="https://www.facebook.com/profile.php?id=61561206652377" target="_blank"><i class="bi bi-facebook"></i></a>
-               
                 <!-- Add more social links as needed -->
             </div>
             <div class="policy-links">
