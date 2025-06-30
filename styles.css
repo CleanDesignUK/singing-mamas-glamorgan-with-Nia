@@ -354,3 +354,46 @@ body {
         font-size: 1rem;
     }
 }
+
+/* Taster Session Section */
+#taster-session {
+    background-color: #FFF8E1; /* match body bg */
+}
+#taster-session .section-title {
+    margin-bottom: 20px;
+}
+#taster-session .card {
+    background-color: #ffffff; /* white card */
+    border: 3px solid #FFA500; /* orange border */
+    border-radius: 0;
+    overflow: hidden;
+}
+#taster-session .card-img-top {
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+#taster-session .card-img-top:hover {
+    transform: scale(1.05);
+}
+#taster-session .card-body h4 {
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+#taster-session .card-body p {
+    line-height: 1.6;
+}
+#taster-session .btn-primary,
+#taster-session .btn-outline-primary {
+    padding: 10px 20px;
+    font-weight: 600;
+    border-radius: 0;
+}
+#taster-session .btn-outline-primary {
+    color: #FFA500;
+    border-color: #FFA500;
+}
+#taster-session .btn-outline-primary:hover {
+    background-color: #FFA500;
+    color: #fff;
+}
